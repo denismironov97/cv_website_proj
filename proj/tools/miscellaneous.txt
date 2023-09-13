@@ -20,7 +20,7 @@ Large 1.8
 0.75px
 
 --02 COLORS
-- Primary: #1971C2;
+- Primary: #1971C2; #fff; #0c8599;
 - Tints: #d1e3f3;
 - Shades:#124f88;
 - Accents:
