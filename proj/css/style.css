@@ -1,0 +1,44 @@
+/* Header */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #d1e3f3;
+
+  padding: 0 4.8rem;
+  margin-bottom: 100px;
+
+  /* Because we want header to be sticky later on */
+  height: 4.8rem;
+}
+/* ****************************************************************************** */
+
+/* Navigation */
+.contacts-info-list {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+
+  list-style: none;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #333;
+
+  padding: 0.8rem 1.2rem;
+  border-radius: 9px;
+  background-color: #124f88;
+  color: #fff;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  cursor: pointer;
+}
+/* ****************************************************************************** */
