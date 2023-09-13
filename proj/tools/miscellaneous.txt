@@ -21,8 +21,8 @@ Large 1.8
 
 --02 COLORS
 - Primary: #1971C2;
-- Tints:
-- Shades:
+- Tints: #d1e3f3;
+- Shades:#124f88;
 - Accents:
 - Greys:  #333; #555; #767676; #6f6f6f;
 
@@ -31,7 +31,7 @@ Large 1.8
 
 --04 SHADOWS
 
---05 BORDER-RADIUS
+--05 BORDER-RADIUS 9px
 
 --06 WHITESPACE
 
