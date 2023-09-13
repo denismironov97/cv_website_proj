@@ -10,3 +10,32 @@ html {
   /* 10 / 16px  = 62.5% */
   font-size: 62.5%;
 }
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  color: #555;
+}
+
+/* General Reusable Components */
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  column-gap: 3.2rem;
+  row-gap: 4.8rem;
+}
+
+.grid-2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-center-vertically {
+  align-items: center;
+}
+/* ****************************************************************************** */
