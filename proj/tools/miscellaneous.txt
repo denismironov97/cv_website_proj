@@ -24,7 +24,7 @@ Large 1.8
 - Tints: #d1e3f3;
 - Shades:#124f88;
 - Accents:
-- Greys:  #333; #555; #767676; #6f6f6f;
+- Greys:  #333; #444; #555; #767676; #6f6f6f;
 
 --03 IMG
 - Source: https://undraw.co/illustrations
