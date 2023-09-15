@@ -11,7 +11,7 @@
   /* For sticky header later on */
   height: 6.4rem;
 }
-/* ****************************************************************************** */
+/* ----------------------------------------------------------------------------- */
 
 /* Navigation */
 .contacts-info-list {
@@ -56,20 +56,20 @@
   cursor: pointer;
   color: #0c8599;
 }
-/* ****************************************************************************** */
+/* ----------------------------------------------------------------------------- */
 
 /* Hero Section */
 .section-hero {
   background-color: #d1e3f3;
   padding: 4.8rem 0 8rem 0;
-
-  /* Temp remove later*/
-  margin-bottom: 9.6rem;
-  /* Temp remove later*/
 }
 
-.hero-grid-end-vertically {
-  align-items: end;
+.grid-hero-container {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  column-gap: 9.6rem;
+  /* Just in case */
+  /* row-gap: 4.8rem; */
 }
 
 .hero-description {
@@ -77,12 +77,40 @@
   line-height: 1.6;
 }
 
-.description-box p:not(:last-child) {
-  margin-bottom: 2.4rem;
-}
-
 .img-hero {
-  margin-bottom: 3.2rem;
+  width: 100%;
+  border-radius: 50%;
 }
 
-/* ****************************************************************************** */
+/* ----------------------------------------------------------------------------- */
+
+/* Interests Section */
+.section-interests-primary {
+  padding: 6.4rem 0 8rem 0;
+
+  /* Temp remove later*/
+  margin-bottom: 13rem;
+  /* Temp remove later*/
+}
+
+.primary-interests {
+  margin-bottom: 4.8rem;
+}
+
+.interests-description-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+
+  list-style: none;
+
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+
+.icon-interests {
+  width: 3rem;
+  height: 3rem;
+  color: #124f88;
+}
+/* ----------------------------------------------------------------------------- */
