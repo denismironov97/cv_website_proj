@@ -85,12 +85,8 @@
 /* ----------------------------------------------------------------------------- */
 
 /* Interests Section */
-.section-interests-primary {
+.section-interests {
   padding: 8rem 0;
-
-  /* Temp remove later*/
-  margin-bottom: 13rem;
-  /* Temp remove later*/
 }
 
 .primary-interests {
@@ -112,5 +108,45 @@
   width: 3rem;
   height: 3rem;
   color: #124f88;
+}
+/* ----------------------------------------------------------------------------- */
+
+/* Hard Skills Section */
+.section-hard-skills {
+  padding: 8rem 0;
+
+  /* Temp remove later*/
+  margin-bottom: 13rem;
+  /* Temp remove later*/
+}
+
+.hard-skills-description-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+
+  list-style: none;
+}
+
+.hard-skill-item {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.icon-hard-skill {
+  color: #1971c2;
+  font-size: 3.6rem;
+}
+
+.icon-hard-skill-svg {
+  fill: #1971c2;
+  width: 3.6rem;
+  height: 3.6rem;
+}
+
+.hard-skill-content {
+  font-size: 2rem;
+  font-weight: 600;
 }
 /* ----------------------------------------------------------------------------- */
