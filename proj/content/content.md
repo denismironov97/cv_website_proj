@@ -3,7 +3,9 @@
 Hello, my name is Denis. I have a keen interest in tackling complex challenges and continuously expanding my knowledge in the ever-evolving field of software engineering.
 Problem solving is a hobby of mine, because of how it's applied daily in solving everyday problems.
 I'm currently studying software engineering with the hopes of becoming a full stack developer.
-I'm eager to leverage my problem-solving skills and passion for learning to make significant contributions in this field
+I'm eager to leverage my problem-solving skills and passion for
+learning to make significant contributions in the software
+engineering field.
 
 ## Interests/Hobbies SECTION
 
@@ -33,14 +35,13 @@ Clearing the mind of unnecessary clutter helps you prepare for the day ahead.
 
 ## Hard skills SECTION
 
-JavaScript(Node.js)
-HTML&CSS
-C#
-.NET (5 and 6), .NET Core (2.1, 3.1)
-Git(VCS)
-GitHub
-Visual Studio(2019, 2022)
-Visual Studio Code
+(Logo) C# .NET(5 - 7), .NET Core (2.1 - 3.1)
+(Logo) JavaScript(Node.js)
+(Logo) HTML5 & CSS3
+(Logo) Git(VCS)
+(Logo) GitHub
+(Logo) Visual Studio(2019, 2022)
+(Logo) Visual Studio Code
 
 ## Soft skills SECTION
 
