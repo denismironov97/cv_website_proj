@@ -60,6 +60,10 @@ Operations accountant
 
 ## Education Experience SECTION
 
+2023 – 2023 Udemy-Courses
+Software engineering
+-HTML&CSS
+
 2020 – 2022 Software University – Sofia
 Software engineering
 
