@@ -22,7 +22,7 @@ body {
 /* Grids Containers*/
 .container {
   max-width: 120rem;
-  padding: 1.2rem 3.2rem;
+  padding: 1.6rem 4.8rem;
   margin: 0 auto;
 
   box-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.233);
@@ -46,6 +46,18 @@ body {
 
 .grid-center-vertically {
   align-items: center;
+}
+
+.grid-center-horizontally {
+  justify-items: center;
+}
+
+.grid-start-horizontally {
+  justify-items: start;
+}
+
+.grid-end-horizontally {
+  justify-items: end;
 }
 /* ----------------------------------------------------------------------------- */
 
