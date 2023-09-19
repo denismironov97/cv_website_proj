@@ -22,8 +22,10 @@ body {
 /* Grids Containers*/
 .container {
   max-width: 120rem;
-  padding: 0 3.2rem;
+  padding: 1.2rem 3.2rem;
   margin: 0 auto;
+
+  box-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.233);
 }
 
 .grid {
@@ -83,6 +85,10 @@ body {
 /* Paragraphs */
 .description-box p:not(:last-child) {
   margin-bottom: 2.4rem;
+}
+
+.important-text {
+  font-weight: 700;
 }
 /* ----------------------------------------------------------------------------- */
 
