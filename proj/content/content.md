@@ -79,3 +79,11 @@ Finance – Bachelor's degree
 
 2011 – 2016 Banking with English | National Trade and Banking High School of Sofia
 Highschool degree
+
+## Projects SECTION
+
+### Personal Creations
+
+### Training Projects
+
+https://omnifood-hephaestus.netlify.app/
