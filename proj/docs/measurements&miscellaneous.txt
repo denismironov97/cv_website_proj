@@ -28,8 +28,8 @@ Large 1.8
 
 --03 IMG
 - Source: https://undraw.co/illustrations
-- https://ionic.io/ionicons
-- https://icons8.com/line-awesome
+-(icon pack 1) https://ionic.io/ionicons
+-(icon pack 2) https://icons8.com/line-awesome
 
 --04 SHADOWS
 
