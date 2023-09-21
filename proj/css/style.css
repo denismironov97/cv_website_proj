@@ -401,6 +401,7 @@ footer {
   justify-items: center;
   justify-content: center;
   gap: 2.4rem;
+  margin-bottom: 1.2rem;
 }
 
 .footer-icon {
@@ -430,5 +431,19 @@ footer {
   font-size: 1.8rem;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+.creator-list {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+}
+
+.creator-list span {
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 /* ----------------------------------------------------------------------------- */
