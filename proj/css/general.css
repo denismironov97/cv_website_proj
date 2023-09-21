@@ -18,6 +18,11 @@ body {
   color: #444;
 }
 
+main {
+  /* height of fixed header 6.4 + header margin-bottom 4.8 = 11.2*/
+  margin-top: 11.2rem;
+}
+
 /* General Reusable Components */
 /* Grids Containers*/
 .container {

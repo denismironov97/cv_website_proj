@@ -1,5 +1,11 @@
 /* Header */
 .main-header {
+  position: fixed;
+  top: 0;
+  /* bottom: 0; */
+
+  width: 100%;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -10,6 +16,8 @@
 
   /* For sticky header later on */
   height: 6.4rem;
+
+  z-index: 999;
 }
 /* ----------------------------------------------------------------------------- */
 
