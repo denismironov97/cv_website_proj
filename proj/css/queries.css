@@ -1,0 +1,76 @@
+/* rem and em DO NOT depend on html font-size in media queries! 
+Instead we assume 1rem = 1em = 16px */
+
+/*
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+/* Below 1344px (Small desktop screens) */
+@media (max-width: 84em) {
+  .main-header {
+    padding: 0 3.2rem;
+  }
+
+  .container {
+    max-width: 100rem;
+    padding: 2.4rem 3.2rem;
+  }
+
+  .grid-hero-container {
+    column-gap: 4.8rem;
+  }
+
+  .contacts-info-list {
+    gap: 1.2rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 1.6rem;
+  }
+
+  .heading-primary {
+    font-size: 5.2rem;
+  }
+
+  .footer-container {
+    max-width: 80rem;
+  }
+}
+/* ********************************************************************** */
+
+/* Below 1100px (Smaller desktop screens) */
+@media (max-width: 69em) {
+  html {
+    /* 9px / 16px 56.5% */
+    font-size: 56.5%;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+    /* Just in case */
+    /* row-gap: 3.2rem; */
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2rem;
+  }
+}
+/* ********************************************************************** */
+
+/* Below 1000px (Smaller desktop screens) */
+/* @media (max-width: 63em) {
+} */
+/* ********************************************************************** */
