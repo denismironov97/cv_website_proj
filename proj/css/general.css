@@ -26,6 +26,12 @@ main {
 }
 
 /* General Reusable Components */
+/* Display */
+.toggle-display {
+  display: none;
+}
+/* ----------------------------------------------------------------------------- */
+
 /* Grids Containers*/
 .container {
   max-width: 120rem;
