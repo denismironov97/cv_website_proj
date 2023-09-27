@@ -14,7 +14,12 @@ const optionBtns = {
 
 const mobileHeader = document.querySelector(".mobile-header");
 
+const arrowBtns = document.querySelectorAll(".arrow");
+
+arrowBtns.forEach((el) => el.addEventListener("click", toggleEducationInfo));
+
 headerElsRefAssocArr.mobileNav.addEventListener("click", toggleMobileOptions);
+
 window.addEventListener("resize", changeMenuBar);
 
 initialScreenLoad();
@@ -71,10 +76,7 @@ function toggleMobileOptions() {
   mobileHeader.classList.toggle("toggle-display");
 }
 
-//----------------------------------------------------------------------
-const arrowBtns = document.querySelectorAll(".arrow");
-arrowBtns.forEach((el) => el.addEventListener("click", toggleEducationInfo));
-
+//Education achievements box to be interactive
 function toggleEducationInfo(ev) {
   const arrowBtn = ev.target.parentElement;
   const currEducationBox =
