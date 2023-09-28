@@ -190,3 +190,38 @@ Spacing system (px)
     justify-content: center;
   }
 }
+/* ********************************************************************** */
+
+/* Below 672px (Mobile screens) */
+@media (max-width: 42em) {
+  .projects-box {
+    column-gap: 1.6rem;
+  }
+  .footer-contacts-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.2rem;
+    row-gap: 1.2rem;
+  }
+
+  .contact-item {
+    grid-column: 1 / -1;
+  }
+
+  .footer-list-item:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .creator-list {
+    gap: 1.6rem;
+  }
+}
+/* ********************************************************************** */
+
+/* Below 400px (Smaller Mobile screens) */
+@media (max-width: 25em) {
+  .hero-description,
+  .interests-description-list {
+    line-height: 1.8;
+  }
+}
