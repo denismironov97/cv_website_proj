@@ -112,3 +112,81 @@ Spacing system (px)
   }
 }
 /* ********************************************************************** */
+
+/* Below 800px (Small Tablet screens) */
+@media (max-width: 50em) {
+  .grid-hero-container {
+    grid-template-columns: 1fr;
+
+    row-gap: 3.2rem;
+  }
+
+  .img-hero {
+    width: 60%;
+  }
+
+  .grid {
+    row-gap: 3.2rem;
+  }
+
+  .grid-primary-z,
+  .grid-secondary-z {
+    grid-template-columns: 1fr;
+  }
+
+  .img-secondary-z {
+    grid-column: 1 / -1;
+    grid-row: 1 / 1;
+  }
+
+  .img-primary-z {
+    grid-column: 1 / -1;
+  }
+
+  .img-generic {
+    width: 60%;
+  }
+
+  .section-hero {
+    padding: 3.2rem 2.4rem 4.8rem 2.4rem;
+  }
+
+  .section-hard-skills {
+    padding: 4.8rem 2.4rem 2.4rem 2.4rem;
+  }
+
+  .section-soft-skills,
+  .section-education,
+  .section-work-experience,
+  .section-projects,
+  .section-interests,
+  footer {
+    padding: 2.4rem 2.4rem;
+  }
+
+  .heading-primary,
+  .heading-secondary,
+  .heading-tertiary {
+    text-align: center;
+  }
+
+  .hard-skill-item,
+  .soft-skill-item {
+    justify-content: center;
+  }
+
+  /* --------- */
+  .education-text,
+  .work-exp-text {
+    text-align: center;
+  }
+
+  .education-level,
+  .work-level {
+    justify-content: center;
+  }
+
+  .heading-tertiary-flex-container {
+    justify-content: center;
+  }
+}
