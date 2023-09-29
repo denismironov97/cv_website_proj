@@ -285,6 +285,7 @@
 .arrow-btn {
   display: block;
 
+  border-radius: 50%;
   border: none;
   background-color: #fff;
   padding: 1.2rem;

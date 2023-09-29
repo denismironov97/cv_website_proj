@@ -142,11 +142,16 @@ main {
 }
 /* ----------------------------------------------------------------------------- */
 
-/* Paragraphs */
+/* Focus  Pseudo Class*/
 *:focus {
   outline: none;
 
   /* Trick to add border inside/outside the element, not outside */
   box-shadow: 0 0 0 0.8rem rgba(25, 112, 194, 0.5);
 }
+
+.arrow-btn:focus {
+  box-shadow: none;
+}
+
 /* ----------------------------------------------------------------------------- */
