@@ -16,7 +16,7 @@
   padding: 0 4.8rem;
 
   /* For sticky header later on */
-  height: 6.4rem;
+  height: 5.6rem;
 
   z-index: 999;
 }
@@ -71,7 +71,7 @@
 /* Mobile Navigation */
 .mobile-header {
   position: fixed;
-  top: 6.4rem;
+  top: 5.6rem;
   left: 50%;
   transform: translate(-50%);
 

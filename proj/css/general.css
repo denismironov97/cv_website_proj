@@ -21,8 +21,8 @@ body {
 }
 
 main {
-  /* height of fixed header 6.4 + header margin-bottom 4.8 = 11.2*/
-  margin-top: 11.2rem;
+  /* height of fixed header-top 5.6rem <= X(margin-top) */
+  margin-top: 8rem;
 }
 
 /* General Reusable Components */
