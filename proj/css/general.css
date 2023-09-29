@@ -150,7 +150,8 @@ main {
   box-shadow: 0 0 0 0.8rem rgba(25, 112, 194, 0.5);
 }
 
-.arrow-btn:focus {
+.arrow-btn:focus,
+.anchor-icon:focus {
   box-shadow: none;
 }
 

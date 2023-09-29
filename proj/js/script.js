@@ -16,7 +16,7 @@ const optionBtns = {
 };
 
 const mobileHeader = document.querySelector(".mobile-header");
-const allAnchorTagEl = document.querySelectorAll("a:link");
+const allAnchorTagEl = document.querySelectorAll('a[name="info-a"]:link');
 const arrowBtns = document.querySelectorAll(".arrow");
 
 arrowBtns.forEach((el) => el.addEventListener("click", toggleEducationInfo));
