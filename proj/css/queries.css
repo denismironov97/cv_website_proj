@@ -9,8 +9,8 @@ Spacing system (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
 
-/* Below 1344px (Small desktop screens) */
-@media (max-width: 84em) {
+/* Below 1360px (Small-1 desktop screens) */
+@media (max-width: 85em) {
   .main-header {
     padding: 0 3.2rem;
   }
@@ -25,16 +25,7 @@ Spacing system (px)
   }
 
   .contacts-info-list {
-    gap: 1.2rem;
-  }
-
-  .main-nav-link:link,
-  .main-nav-link:visited {
-    font-size: 1.6rem;
-  }
-
-  .heading-primary {
-    font-size: 5.2rem;
+    gap: 1.6rem;
   }
 
   .footer-container {
@@ -43,11 +34,28 @@ Spacing system (px)
 }
 /* ********************************************************************** */
 
-/* Below 1100px (Smaller desktop screens) */
-@media (max-width: 69em) {
+/* Below 1248px (Small-2 desktop screens) */
+@media (max-width: 78em) {
   html {
     /* 9px / 16px 56.5% */
     font-size: 56.5%;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .contacts-info-list {
+    gap: 1.2rem;
+  }
+}
+/* ********************************************************************** */
+
+/* Below 1100px (Smaller desktop screens) */
+@media (max-width: 69em) {
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 1.4rem;
   }
 
   .grid {
@@ -57,15 +65,15 @@ Spacing system (px)
   }
 
   .heading-primary {
-    font-size: 4.4rem;
-  }
-
-  .heading-secondary {
     font-size: 3.6rem;
   }
 
+  .heading-secondary {
+    font-size: 3rem;
+  }
+
   .heading-tertiary {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 /* ********************************************************************** */
