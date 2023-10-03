@@ -1,0 +1,14 @@
+{
+  "icons": [
+    {
+      "src": "content/favicon/ITDogeFavicon-192x192-android.jpg",
+      "type": "img/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "content/favicon/ITDogeFavicon-512x512-android.jpg",
+      "type": "img/png",
+      "sizes": "512x512"
+    }
+  ]
+}
