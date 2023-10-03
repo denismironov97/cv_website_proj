@@ -16,7 +16,13 @@ const optionBtns = {
 };
 
 const mobileHeader = document.querySelector(".mobile-header");
+
 const allAnchorTagEl = document.querySelectorAll('a[name="info-a"]:link');
+
+const cvAnchorEl = document.querySelector(
+  ".personal-projects-list .project-item-box .project-link"
+);
+
 const arrowBtns = document.querySelectorAll(".arrow");
 
 arrowBtns.forEach((el) => el.addEventListener("click", toggleEducationInfo));
@@ -26,6 +32,8 @@ headerElsRefAssocArr.mobileNav.addEventListener("click", toggleMobileOptions);
 allAnchorTagEl.forEach((linkElement) =>
   linkElement.addEventListener("click", smoothScrollTo)
 );
+
+cvAnchorEl.addEventListener("click", smoothScrollTo);
 
 window.addEventListener("resize", changeMenuBar);
 
@@ -112,13 +120,17 @@ function smoothScrollTo(ev) {
   const href = element.getAttribute("href");
   let pixelValue = 0;
 
-  if (href !== "#" && href.startsWith("#")) {
+  if (href !== "#homePage" && href.startsWith("#")) {
     const element = document.querySelector(href);
     const headerOffset = 56; //56 pixels top from the section element
     const elementPosition = element.getBoundingClientRect().top;
     const offsetPosition = elementPosition + window.scrollY - headerOffset;
 
     pixelValue = offsetPosition;
+  }
+
+  if (href === "#homePage") {
+    pixelValue = 0;
   }
 
   window.scrollTo({

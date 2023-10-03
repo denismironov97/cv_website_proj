@@ -151,7 +151,8 @@ main {
 }
 
 .arrow-btn:focus,
-.anchor-icon:focus {
+.anchor-icon:focus,
+.footer-list-item:not(:last-child) a {
   box-shadow: none;
 }
 
