@@ -1,6 +1,7 @@
 #Custom Files ignore list
 notes.js
 launch.json
+final-deployment-ver
 # *.jpg
 # *.gif
 # *.png
