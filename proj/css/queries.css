@@ -11,9 +11,9 @@ Spacing system (px)
 
 /* Below 1360px (Small-1 desktop screens) */
 @media (max-width: 85em) {
-  .main-header {
+  /* .main-header {
     padding: 0 3.2rem;
-  }
+  } */
 
   .container {
     max-width: 100rem;
@@ -45,9 +45,9 @@ Spacing system (px)
     font-size: 4.4rem;
   }
 
-  .contacts-info-list {
+  /* .contacts-info-list {
     gap: 1.2rem;
-  }
+  } */
 }
 /* ********************************************************************** */
 
@@ -125,7 +125,6 @@ Spacing system (px)
 @media (max-width: 50em) {
   .grid-hero-container {
     grid-template-columns: 1fr;
-
     row-gap: 3.2rem;
   }
 
@@ -183,7 +182,6 @@ Spacing system (px)
     justify-content: center;
   }
 
-  /* --------- */
   .education-text,
   .work-exp-text {
     text-align: center;
