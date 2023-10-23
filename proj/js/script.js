@@ -93,26 +93,30 @@ function toggleMobileOptions() {
 
 //Education achievements box to be interactive
 function toggleEducationInfo(ev) {
-  const arrowBtn = ev.target.parentElement;
+  const targetEl = ev.target.parentElement;
+  const spanEl = targetEl.parentElement.querySelector('.more-info');
   const currEducationBox =
     ev.target.parentElement.parentElement.nextElementSibling; // always true
 
-  //The next sibling is the up-button meaning the arrowBtn is the down-button
-  if (arrowBtn.nextElementSibling) {
-    arrowBtn.nextElementSibling.classList.toggle('toggle-display');
-  } else {
-    //is null meaning the arrowBtn is up-button itself
+  targetEl.parentElement
+    .querySelector('.btn-down')
+    .classList.toggle('toggle-display');
 
-    arrowBtn.previousElementSibling.classList.toggle('toggle-display');
-  }
+  targetEl.parentElement
+    .querySelector('.btn-up')
+    .classList.toggle('toggle-display');
 
-  arrowBtn.classList.toggle('toggle-display');
   currEducationBox.classList.toggle('toggle-display');
+
+  if (spanEl.textContent === 'More Info') {
+    spanEl.textContent = 'Hide Info';
+  } else {
+    spanEl.textContent = 'More Info';
+  }
 }
 
 /* Implementing smooth scrolling */
 /* Selecting elements that only have the href property */
-
 function smoothScrollTo(ev) {
   ev.preventDefault();
 
