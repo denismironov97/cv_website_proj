@@ -3,39 +3,39 @@ const bodyWidthPredetermined = 1015;
 let isBigMenuRemoved = false; //! important flag/logical gate
 
 const headerElsRefAssocArr = {
-  navPrimary: document.querySelector(".nav-contacts-primary"),
-  navSecondary: document.querySelector(".nav-contacts-secondary"),
-  mobileNav: document.querySelector(".nav-mobile"),
+  navPrimary: document.querySelector('.nav-contacts-primary'),
+  navSecondary: document.querySelector('.nav-contacts-secondary'),
+  mobileNav: document.querySelector('.nav-mobile'),
 };
 
-const headerEl = document.querySelector(".main-header");
+const headerEl = document.querySelector('.main-header');
 
 const optionBtns = {
-  openBtn: headerElsRefAssocArr.mobileNav.querySelector(".open-btn"),
-  closeBtn: headerElsRefAssocArr.mobileNav.querySelector(".close-btn"),
+  openBtn: headerElsRefAssocArr.mobileNav.querySelector('.open-btn'),
+  closeBtn: headerElsRefAssocArr.mobileNav.querySelector('.close-btn'),
 };
 
-const mobileHeader = document.querySelector(".mobile-header");
+const mobileHeader = document.querySelector('.mobile-header');
 
 const allAnchorTagEl = document.querySelectorAll('a[name="info-a"]:link');
 
 const cvAnchorEl = document.querySelector(
-  ".personal-projects-list .project-item-box .project-link"
+  '.personal-projects-list .project-item-box .project-link'
 );
 
-const arrowBtns = document.querySelectorAll(".arrow");
+const arrowBtns = document.querySelectorAll('.arrow');
 
-arrowBtns.forEach((el) => el.addEventListener("click", toggleEducationInfo));
+arrowBtns.forEach((el) => el.addEventListener('click', toggleEducationInfo));
 
-headerElsRefAssocArr.mobileNav.addEventListener("click", toggleMobileOptions);
+headerElsRefAssocArr.mobileNav.addEventListener('click', toggleMobileOptions);
 
 allAnchorTagEl.forEach((linkElement) =>
-  linkElement.addEventListener("click", smoothScrollTo)
+  linkElement.addEventListener('click', smoothScrollTo)
 );
 
-cvAnchorEl.addEventListener("click", smoothScrollTo);
+cvAnchorEl.addEventListener('click', smoothScrollTo);
 
-window.addEventListener("resize", changeMenuBar);
+window.addEventListener('resize', changeMenuBar);
 
 initialScreenLoad();
 
@@ -49,13 +49,13 @@ function initialScreenLoad() {
     headerEl.removeChild(headerElsRefAssocArr.navSecondary);
     headerEl.appendChild(headerElsRefAssocArr.mobileNav);
 
-    headerEl.style.justifyContent = "center";
+    headerEl.style.justifyContent = 'center';
   } else {
     headerEl.appendChild(headerElsRefAssocArr.navPrimary);
     headerEl.appendChild(headerElsRefAssocArr.navSecondary);
     headerEl.removeChild(headerElsRefAssocArr.mobileNav);
 
-    headerEl.style.justifyContent = "space-between";
+    headerEl.style.justifyContent = 'space-between';
   }
 }
 
@@ -71,7 +71,7 @@ function changeMenuBar() {
     headerEl.removeChild(headerElsRefAssocArr.navSecondary);
     headerEl.appendChild(headerElsRefAssocArr.mobileNav);
 
-    headerEl.style.justifyContent = "center";
+    headerEl.style.justifyContent = 'center';
   } else if (bodyWidthPx > bodyWidthPredetermined && isBigMenuRemoved) {
     //Attaching elements
     isBigMenuRemoved = false;
@@ -80,15 +80,15 @@ function changeMenuBar() {
     headerEl.appendChild(headerElsRefAssocArr.navSecondary);
     headerEl.removeChild(headerElsRefAssocArr.mobileNav);
 
-    headerEl.style.justifyContent = "space-between";
+    headerEl.style.justifyContent = 'space-between';
   }
 }
 
 //Options toggle for mobile options layout
 function toggleMobileOptions() {
-  optionBtns.openBtn.classList.toggle("toggle-display");
-  optionBtns.closeBtn.classList.toggle("toggle-display");
-  mobileHeader.classList.toggle("toggle-display");
+  optionBtns.openBtn.classList.toggle('toggle-display');
+  optionBtns.closeBtn.classList.toggle('toggle-display');
+  mobileHeader.classList.toggle('toggle-display');
 }
 
 //Education achievements box to be interactive
@@ -99,15 +99,15 @@ function toggleEducationInfo(ev) {
 
   //The next sibling is the up-button meaning the arrowBtn is the down-button
   if (arrowBtn.nextElementSibling) {
-    arrowBtn.nextElementSibling.classList.toggle("toggle-display");
+    arrowBtn.nextElementSibling.classList.toggle('toggle-display');
   } else {
     //is null meaning the arrowBtn is up-button itself
 
-    arrowBtn.previousElementSibling.classList.toggle("toggle-display");
+    arrowBtn.previousElementSibling.classList.toggle('toggle-display');
   }
 
-  arrowBtn.classList.toggle("toggle-display");
-  currEducationBox.classList.toggle("toggle-display");
+  arrowBtn.classList.toggle('toggle-display');
+  currEducationBox.classList.toggle('toggle-display');
 }
 
 /* Implementing smooth scrolling */
@@ -117,10 +117,10 @@ function smoothScrollTo(ev) {
   ev.preventDefault();
 
   const element = ev.target;
-  const href = element.getAttribute("href");
+  const href = element.getAttribute('href');
   let pixelValue = 0;
 
-  if (href !== "#homePage" && href.startsWith("#")) {
+  if (href !== '#homePage' && href.startsWith('#')) {
     const element = document.querySelector(href);
     const headerOffset = 56; //56 pixels top from the section element
     const elementPosition = element.getBoundingClientRect().top;
@@ -129,17 +129,17 @@ function smoothScrollTo(ev) {
     pixelValue = offsetPosition;
   }
 
-  if (href === "#homePage") {
+  if (href === '#homePage') {
     pixelValue = 0;
   }
 
   window.scrollTo({
     top: pixelValue,
-    behavior: "smooth",
+    behavior: 'smooth',
   });
 
   //Close mobile nav after choosing an option
-  if (element.classList.contains("mobile-nav-link")) {
+  if (element.classList.contains('mobile-nav-link')) {
     toggleMobileOptions();
   }
 }

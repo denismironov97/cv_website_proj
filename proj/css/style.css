@@ -283,12 +283,23 @@
 
 /* Arrow */
 .arrow-btn {
+  position: relative;
   display: block;
 
   border-radius: 50%;
   border: none;
   background-color: #fff;
   padding: 1.2rem;
+}
+
+.arrow-btn::after {
+  position: absolute;
+  top: 23%;
+  left: 83%;
+
+  content: 'More Info';
+  font-size: 1.2rem;
+  color: #1971c2;
 }
 
 .arrow {
