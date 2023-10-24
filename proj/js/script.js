@@ -1,4 +1,4 @@
-const bodyWidthPredetermined = 1015;
+const bodyWidthPredetermined = 770;
 
 let isBigMenuRemoved = false; //! important flag/logical gate
 
